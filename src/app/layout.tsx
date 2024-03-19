@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { ClerkProvider } from "@clerk/nextjs";
+import { dark ,shadesOfPurple } from '@clerk/themes';
+
 
 import "./globals.css";
 
@@ -11,8 +14,8 @@ const IBMplex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "AIPhotoGen",
-  description: "Ai-powered image generator and editor",
+  title: "Github Readme Generator for Repositories",
+  description: "",
 };
 
 export default function RootLayout({
@@ -21,10 +24,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider appearance={{
+      variables: {colorPrimary: '#624cf5'}
+    }}>
     <html lang="en">
       <body className={cn("font-IBMPlex antialiased", IBMplex.variable)}>
         {children}
         </body>
     </html>
+    </ClerkProvider>
   );
 }
