@@ -30,7 +30,7 @@ export const navLinks = [
       icon: "/assets/icons/camera.svg",
     },
     {
-      label: "Github Readme.md Generator",
+      label: "Readme.md Generator",
       route: "/transformations/add/GithubReadmeGenerator",
       icon: "/assets/icons/github.svg",
     },
