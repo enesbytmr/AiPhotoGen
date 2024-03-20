@@ -10,6 +10,7 @@ const Layout = ({children}: {children: React.ReactNode}) => {
          <div className="root-container">
             <div className="wrapper">
               {children}
+
             </div>
         </div>
     </main>
