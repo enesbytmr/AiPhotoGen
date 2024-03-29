@@ -1,8 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# AiPhotoGen
+
+Welcome to AiPhotoGen - your go-to application for AI-driven photo generation! Built with Next.js, this platform allows users to create unique images based on specific prompts and transformations.
 
 ## Getting Started
 
-First, run the development server:
+To get your local development environment running:
 
 ```bash
 npm run dev
@@ -14,23 +17,27 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view the application in action. Begin by exploring the application's functionality, including signing in/up, managing your profile, and initiating image transformations.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **User Authentication**: Secure sign-in/up functionality.
+- **Profile Management**: Customize your user profile with photo, email, and more.
+- **Dynamic Image Transformations**: Request custom AI-generated images.
 
-## Learn More
+## Models
 
-To learn more about Next.js, take a look at the following resources:
+- **User Model**: Manages user information, including authentication details and profile data.
+- **Image Model**: Handles image data, including titles, URLs, and transformation specifics.
+- **Transaction Model**: Records transactions for image generation requests.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Next.js**: A React framework for production.
+- **MongoDB**: NoSQL database for storing user and image data.
+- **Mongoose**: Elegant MongoDB object modeling for Node.js.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Deploy your AiPhotoGen application easily with Vercel, the creators of Next.js. Follow the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
