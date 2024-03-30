@@ -18,7 +18,7 @@ export const connectToDatabase = async () => {
         return cached.conn;
     }
     if (!MONGODB_URL) throw new Error('MONGODB_URL is not defined');
-    cached.promise || mongoose.connect(MONGODB_URL, {dbName:"lumiWebApp", bufferCommands: false})
+    cached.promise || await mongoose.connect(MONGODB_URL, {dbName:"lumiWebApp", bufferCommands: false})
     return cached.conn
 }
 
