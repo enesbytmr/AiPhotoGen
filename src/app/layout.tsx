@@ -14,7 +14,7 @@ const IBMplex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Github Readme Generator for Repositories",
+  title: "LumiaSoft Web Apps",
   description: "",
 };
 
