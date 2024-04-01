@@ -31,7 +31,7 @@ export const navLinks = [
     },
     {
       label: "Readme.md Generator",
-      route: "/transformations/add/GithubReadmeGenerator",
+      route: "/transformations/add/readme",
       icon: "/assets/icons/github.svg",
     },
     {
@@ -163,6 +163,13 @@ export const navLinks = [
         recolor: { prompt: "", to: "", multiple: true },
       },
       icon: "filter.svg",
+    },
+    readme: {
+      type: "readme",
+      title: "Readme.md Generator",
+      subTitle: "Generate a Readme.md file for your GitHub repository",
+      config: { readme: true },
+      icon: "github.svg",
     },
   };
   
